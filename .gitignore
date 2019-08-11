@@ -1,6 +1,6 @@
 *.csv
 *.zip
-random.py
+tryout.py
 __pycache__
 train/
 test/
