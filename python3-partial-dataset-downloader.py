@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
-
 # !/usr/bin/python
-
 # Note: requires the tqdm package (pip install tqdm)
-
 # Note to Kagglers: This script will not run directly in Kaggle kernels. You
 # need to download it and run it on your local machine.
-
 # Downloads images from the Google Landmarks dataset using multiple threads.
 # Images that already exist will not be downloaded again, so the script can
 # resume a partially completed download. All images will be saved in the JPG
@@ -17,7 +13,6 @@ from urllib import request, error
 from PIL import Image
 from io import BytesIO
 
-
 def parse_data(data_file, box_file):
     data_csvfile = open(data_file, 'r')
     data_csvreader = csv.reader(data_csvfile)
@@ -26,7 +21,7 @@ def parse_data(data_file, box_file):
     for count, row in enumerate(data_csvreader):
         if count != 0:
             data_url_dict[row[0]] = row[1]
-
+            
     csvfile = open(box_file, 'r')
     csvreader = csv.reader(csvfile)
     key_url_list = [(line[0], data_url_dict[line[0]]) for count, line in enumerate(csvreader) if count != 0]
