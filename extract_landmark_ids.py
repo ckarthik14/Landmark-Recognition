@@ -12,7 +12,6 @@ filename = "train.csv"
 with open(filename, 'r') as csvfile: 
     # creating a csv reader object 
     csvreader = csv.reader(csvfile) 
-      
 
     # extracting each data row one by one 
     for row in csvreader: 
@@ -28,6 +27,3 @@ with open(filename, 'r') as csvfile:
                 output_file.write(landmark_id+"\n")
 
 output_file.close()
-            
-
-            
