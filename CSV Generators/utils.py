@@ -1,3 +1,5 @@
+# Utils for generating train and test csv's
+
 import os, csv
 
 # Gets a dictionary representation of any csv file with key as id and value as the column representing value_index
