@@ -25,8 +25,7 @@ def parse_data(data_file, box_file):
     csvfile = open(box_file, 'r')
     csvreader = csv.reader(csvfile)
     key_url_list = [(line[0], data_url_dict[line[0]]) for count, line in enumerate(csvreader) if count != 0]
-    key_url_list = key_url_list[1:]  # Chop off header
-
+ 
     return key_url_list
 
 def download_image(key_url):
