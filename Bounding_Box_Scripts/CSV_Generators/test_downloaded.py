@@ -18,4 +18,4 @@ with open('test_downloaded.csv', 'w', newline='') as csvfile:
 
     for id in image_ids:
         actual_id = str(id[:len(id)-4])
-        writer.writerow({'id': actual_id, 'landmark_id': train_dict[actual_id], 'box': box_dict[actual_id]})
+        writer.writerow({'id': actual_id, 'landmark_id': test_dict[actual_id], 'box': box_dict[actual_id]})
