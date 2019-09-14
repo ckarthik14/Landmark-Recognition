@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/python
-# Note: requires the tqdm package (pip install tqdm)
-# Note to Kagglers: This script will not run directly in Kaggle kernels. You
-# need to download it and run it on your local machine.
-# Downloads images from the Google Landmarks dataset using multiple threads.
-# Images that already exist will not be downloaded again, so the script can
-# resume a partially completed download. All images will be saved in the JPG
-# format with 90% compression quality.
 
 import sys, os, multiprocessing, csv, tqdm
 from urllib import request, error
