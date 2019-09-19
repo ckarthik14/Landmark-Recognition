@@ -1,5 +1,5 @@
 #Install latest Python Image Library
-pip install Pillow
+Pillow
 
 #Install tqdm for showing progress bar while downloading dataset
-pip install tqdm
+tqdm
