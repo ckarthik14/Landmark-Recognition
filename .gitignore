@@ -1,3 +1,4 @@
+.ipynb*
 *.zip
 *.csv
 tryout.py
@@ -6,3 +7,4 @@ train*
 test*
 venv/
 .vscode/
+dataset*

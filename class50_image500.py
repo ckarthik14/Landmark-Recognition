@@ -1,3 +1,5 @@
+# Create a list of landmark ids which have more than 550 images
+
 import csv
 from collections import Counter
 from collections import OrderedDict
