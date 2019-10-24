@@ -9,3 +9,4 @@ venv/
 .vscode/
 dataset*
 *.h5
+Bounding_Box_Scripts/
